@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171414">
+  <title>Pour Louanne ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress"><span id="progressBar"></span></div>
+  <div class="grain"></div>
+  <main>
+
+    <section class="hero screen active" id="intro">
+      <div class="hero-orb"></div>
+      <div class="hero-content intro-lines">
+        <p class="eyebrow">une petite parenthèse</p>
+        <h1>Pour <em>Louanne</em>.</h1>
+        <div class="intro-copy">
+          <p>Avant de commencer, j'ai juste quelques petites choses à te dire.</p>
+          <p><strong>Prends ton temps.</strong></p>
+          <p>Il n'y a rien à réussir ici.</p>
+          <p>J'ai pris pas mal de temps pour faire ce petit site.</p>
+          <p>Pas pour faire quelque chose de parfait.</p>
+          <p>Mais parce que j'avais envie de faire quelque chose qui te ressemble un peu.</p>
+          <p>Et surtout parce que j'ai envie d'apprendre à te connaître.</p>
+          <p>Alors réponds comme tu le sens.</p>
+          <p>Et profite simplement du petit voyage. <span>♡</span></p>
+        </div>
+        <button class="primary next" data-target="questions">Commencer <span>→</span></button>
+      </div>
+      <div class="scroll-hint">fais défiler doucement ↓</div>
+    </section>
+
+    <section class="section screen" id="questions">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 — apprendre à te connaître</p>
+        <h2>Quelques questions.<br><em>Juste pour toi.</em></h2>
+        <p>Il n’y a pas de bonne réponse. Réponds comme tu le sens, même si la réponse est complètement inattendue.</p>
+      </div>
+      <div class="question-card reveal" id="questionCard">
+        <div class="q-meta"><span id="qNumber">01</span><span id="qCount">/ 24</span></div>
+        <h3 id="questionText"></h3>
+        <div class="answers" id="answers"></div>
+        <div class="free-answer">
+          <input id="customAnswer" type="text" placeholder="ou écris ta propre réponse…">
+          <button id="customBtn" aria-label="Valider">→</button>
+        </div>
+      </div>
+      <div class="question-progress"><span id="questionProgress"></span></div>
+    </section>
+
+    <section class="section pause screen" id="pause">
+      <div class="pause-inner reveal">
+        <p class="eyebrow">petite interruption non prévue</p>
+        <h2>Moment de<br><em>pause.</em></h2>
+        <p>Tu pensais vraiment que j'allais te laisser répondre sérieusement à toutes ces questions ?</p>
+        <div class="video-frame portrait-video">
+          <video id="pauseVideo" controls playsinline webkit-playsinline preload="metadata" poster="assets/videos/moment-pause-poster.jpg">
+            <source src="assets/videos/moment-de-pause.mp4" type="video/mp4">
+          </video>
+          <button class="video-placeholder" id="videoPlaceholder" type="button">
+            <span>▶</span>
+            <strong>Moment de pause</strong>
+            <small>Appuie pour lancer la vidéo</small>
+          </button>
+        </div>
+        </div>
+        <p class="pause-caption">Voilà. Maintenant que c'est fait… on peut reprendre. 😭</p>
+        <button class="ghost next" data-target="questions">Reprendre les questions →</button>
+      </div>
+    </section>
+
+    <section class="section gallery screen" id="gallery">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 — petite pause</p>
+        <h2>MOMENT D’ADMIRER<br><em>LA PERSONNE AVEC QUI JE CAUSE QUAND MÊME.</em></h2>
+        <p>Clique sur chaque photo. Les cartes se retournent pour te laisser un petit message.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="photo-card flip-card reveal" type="button">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="photo-wrap"><img src="assets/images/louanne-1.jpeg" alt="Louanne"></div>
+              <div class="flip-hint">retourne-moi ↻</div>
+            </div>
+            <div class="flip-back">
+              <span>01</span>
+              <div class="back-heart">♡</div>
+              <p>Je pourrais simplement dire que tu es jolie… mais ce serait un peu trop facile.</p>
+              <small>— petit compliment, parce que tu le mérites quand même.</small>
+            </div>
+          </div>
+        </button>
+
+        <button class="photo-card flip-card offset reveal" type="button">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="photo-wrap"><img src="assets/images/louanne-2.jpeg" alt="Louanne"></div>
+              <div class="flip-hint">retourne-moi ↻</div>
+            </div>
+            <div class="flip-back">
+              <span>02</span>
+              <div class="back-heart">♡</div>
+              <p>J’aime ton sourire, mais surtout cette façon que tu as de rendre un moment plus léger.</p>
+              <small>— et ça, je trouve ça vraiment beau chez quelqu’un.</small>
+            </div>
+          </div>
+        </button>
+
+        <button class="photo-card flip-card reveal" type="button">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="photo-wrap"><img src="assets/images/louanne-3.jpeg" alt="Louanne"></div>
+              <div class="flip-hint">retourne-moi ↻</div>
+            </div>
+            <div class="flip-back">
+              <span>03</span>
+              <div class="back-heart">♡</div>
+              <p>Et puis il y a ce petit truc chez toi que je ne saurais pas vraiment expliquer… une présence qu’on remarque.</p>
+              <small>— voilà, maintenant tu sais.</small>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div class="gallery-end reveal">Bon… je vais éviter de te faire un roman sur chaque photo. <strong>Mais oui, je te trouve vraiment belle. ❤️</strong></div>
+      <button class="primary next reveal" data-target="proof">Et si on continuait ? <span>→</span></button>
+    </section>
+
+    <section class="section proof-section screen" id="proof">
+      <div class="proof-card reveal">
+        <p class="eyebrow">une chose que tu ne réalises peut-être pas</p>
+        <div class="proof-lines">
+          <p>Tu ne te rends peut-être pas compte de tout ce que tu as déjà montré.</p>
+          <p>Sans forcément le chercher, tu m'as déjà prouvé plus de choses que beaucoup de personnes avec qui j'avais parlé avant.</p>
+          <p>Ta façon d'être.</p>
+          <p>Ta sincérité.</p>
+          <p>Les petits détails que tu laisses voir de toi.</p>
+          <p>Et surtout, cette envie que ça me donne de vraiment découvrir qui tu es.</p>
+          <p><em>Je ne prétends pas déjà tout savoir sur toi.</em></p>
+          <p>Justement.</p>
+          <p><strong>J'ai envie de continuer à te découvrir.</strong></p>
+        </div>
+      </div>
+      <button class="primary next reveal" data-target="activities">Alors, on continue ? <span>→</span></button>
+    </section>
+
+    <section class="section activities screen" id="activities">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 — passer de l'écran au réel</p>
+        <h2>On pourrait faire<br><em>quelque chose de simple.</em></h2>
+        <p>Choisis ce qui te donne le plus envie.</p>
+      </div>
+      <div class="activity-grid">
+        <button class="activity-card reveal" data-activity="Le Louvre">
+          <div class="activity-number">01</div><div class="activity-icon">🖼️</div>
+          <h3>Le Louvre</h3><p>Marcher, regarder des trucs magnifiques et probablement se perdre.</p><span>Ça me tente →</span>
+        </button>
+        <button class="activity-card reveal" data-activity="McDonald's">
+          <div class="activity-number">02</div><div class="activity-icon">🍔</div>
+          <h3>McDonald's</h3><p>Parce qu'un grand moment culturel peut aussi être un McDo.</p><span>Ça me tente →</span>
+        </button>
+        <button class="activity-card reveal" data-activity="Une balade">
+          <div class="activity-number">03</div><div class="activity-icon">🌿</div>
+          <h3>Une balade</h3><p>Marcher sans forcément avoir besoin de savoir où on va.</p><span>Ça me tente →</span>
+        </button>
+      </div>
+      <p class="selected-activity" id="selectedActivity"></p>
+      <button class="primary next disabled" id="activityNext" data-target="calendar">Choisir une date <span>→</span></button>
+    </section>
+
+    <section class="section calendar-section screen" id="calendar">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 — à toi de choisir</p>
+        <h2>Quand est-ce qu'on<br><em>fait ça ?</em></h2>
+        <p>Choisis simplement une date qui te convient.</p>
+      </div>
+      <div class="calendar-card reveal">
+        <div class="calendar-top">
+          <button id="prevMonth" aria-label="Mois précédent">←</button>
+          <h3 id="monthLabel"></h3>
+          <button id="nextMonth" aria-label="Mois suivant">→</button>
+        </div>
+        <div class="weekdays"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+        <div class="days" id="days"></div>
+        <div class="date-selected" id="dateSelected">Aucune date choisie</div>
+      </div>
+      <button class="primary next disabled" id="dateNext" data-target="message">Cette date me plaît ❤️</button>
+    </section>
+
+    <section class="section message-section screen" id="message">
+      <div class="message-card reveal">
+        <p class="eyebrow">07 — pour finir</p>
+        <h2>Louanne,</h2>
+        <div class="message-text">
+          <p>Je vais être honnête avec toi : <strong>je ne sais pas encore énormément de choses sur toi.</strong></p>
+          <p>Je ne connais pas encore toutes tes habitudes, tes petites manies, ce qui te fait rire pour rien, les choses qui te passionnent ou même les petites choses qui peuvent te rendre heureuse dans une journée.</p>
+          <p>Mais justement… <em>j'ai envie de les découvrir.</em></p>
+          <p>Je suis quelqu'un qui, quand une personne compte vraiment pour moi, peut énormément donner. Du temps, de l'attention, de l'énergie, des petites attentions… Je ne fais pas forcément les choses à moitié quand j'ai vraiment envie d'apprendre à connaître quelqu'un.</p>
+          <p>Alors si tu joues le jeu avec moi, j'ai envie qu'on découvre tout ça petit à petit.</p>
+          <p>Pas besoin de savoir où ça va nous mener. Juste deux personnes qui apprennent à se connaître, qui partagent des moments, qui rigolent, qui découvrent des choses ensemble… et qui voient où tout ça peut nous emmener.</p>
+          <p class="final-line">Et puis qui sait ?<br><strong>Peut-être qu'on vivra un truc vraiment super cool. ❤️</strong></p>
+        </div>
+        <div class="choice-summary" id="choiceSummary"></div>
+        <button class="primary" id="finalBtn">Voir mon petit résumé →</button>
+      </div>
+    </section>
+
+    <section class="section summary-section screen" id="summary">
+      <div class="section-head reveal">
+        <p class="eyebrow">06 — ton petit souvenir</p>
+        <h2>Garde une trace<br><em>de tes réponses.</em></h2>
+        <p>Un petit résumé que tu peux enregistrer en photo et m'envoyer si tu veux.</p>
+      </div>
+      <div class="summary-card reveal" id="summaryCard">
+        <div class="summary-header">
+          <span>POUR LOUANNE</span>
+          <strong>♡</strong>
+        </div>
+        <h3>Ce que j'ai découvert de toi</h3>
+        <div id="summaryAnswers"></div>
+        <div class="summary-plan" id="summaryPlan"></div>
+      </div>
+      <div class="summary-actions reveal">
+        <button class="primary" id="shareSummary">M'envoyer ça en photo 📸 <span>→</span></button>
+        <button class="ghost" id="finalFromSummary">Continuer <span>→</span></button>
+      </div>
+      <p class="summary-note">Sur téléphone, le bouton peut proposer directement de partager l'image.</p>
+    </section>
+
+    <section class="final-screen screen" id="final">
+      <div class="final-content">
+        <div class="heart">♡</div>
+        <p class="eyebrow">à suivre</p>
+        <h2>Rendez-vous choisi.</h2>
+        <p>Maintenant, reste plus qu'à vivre le moment.</p>
+        <span id="finalDetails"></span>
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
